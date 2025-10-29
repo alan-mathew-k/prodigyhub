@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>ProdigyHub - Sign Up</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <!-- Favicon -->
+  <link href="img/favicon.ico" rel="icon">
+
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Libraries Stylesheet -->
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Navbar Start -->
+  <div class="container-fluid p-0">
+    <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0 px-lg-5">
+      <a href="index.html" class="navbar-brand ml-lg-3">
+        <h1 class="m-0 text-uppercase text-primary">
+          <img src="img/PRODIGY_HUB_TRANS.png" height="60" width="60"> PRODIGYHUB
+        </h1>
+      </a>
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
+        <a href="login.html" class="btn btn-primary pr-3 pl-3 pt-1 pb-1 d-inline offset-10">Sign In</a>
+      </div>
+    </nav>
+  </div>
+  <!-- Navbar End -->
+
+  <!-- Sign Up Section -->
+  <div class="jumbotron jumbotron-fluid position-relative overlay-bottom" style="margin-bottom: 90px;">
+    <div class="container text-center my-5 py-5">
+      <div class="mx-auto mb-5" style="width: 100%; max-width: 600px;">
+        <div class="section-title position-relative mb-4">
+          <h1 class="display-4 text-white">Sign Up</h1>
+          <h4 class="text-light">Create your account to start learning</h4>
+        </div>
+
+        <div class="contact-form">
+          <form id="signupForm">
+            <div class="form-group">
+              <input type="text"
+                     class="form-control border-top-0 border-right-0 border-left-0 p-0"
+                     placeholder="Full Name" id="name" required>
+            </div>
+
+            <div class="form-group">
+              <input type="email"
+                     class="form-control border-top-0 border-right-0 border-left-0 p-0"
+                     placeholder="Email Address" id="email" required>
+            </div>
+
+            <div class="form-group">
+              <input type="text"
+                     class="form-control border-top-0 border-right-0 border-left-0 p-0"
+                     placeholder="Class" id="class" required>
+            </div>
+
+            <div class="form-group">
+              <input type="password"
+                     class="form-control border-top-0 border-right-0 border-left-0 p-0"
+                     placeholder="Password" id="password" required>
+            </div>
+
+            <button class="btn btn-primary py-3 px-5" type="submit" id="signupBtn">Sign Up</button>
+
+            <p class="text-light mt-3">
+              Already have an account?
+              <a href="login.html" class="text-warning">Sign In here</a>.
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Start -->
+  <div class="container-fluid position-relative overlay-top bg-dark text-white-50 py-5" style="margin-top: 90px;">
+    <div class="container mt-5 pt-5">
+      <div class="row">
+        <div class="col-md-6 mb-5">
+          <a href="index.html" class="navbar-brand">
+            <h1 class="mt-n2 text-uppercase text-white">
+              <i class="fa fa-book-reader mr-3"></i>ProdigyHub
+            </h1>
+          </a>
+          <p class="m-0">ProdigyHub helps students learn smarter with expert-led online courses.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer End -->
+
+  <!-- JS Libraries -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+  <!-- Template Javascript -->
+  <script src="js/main.js"></script>
+
+  <!-- Custom JS for Sign Up -->
+  <script>
+    document.getElementById("signupBtn").addEventListener("click", function() {
+  window.location.href = "login.html";
+});
+
+    document.getElementById("signupForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const studentClass = document.getElementById("class").value.trim();
+      const password = document.getElementById("password").value.trim();
+
+      if (!name || !email || !studentClass || !password) {
+        alert("Please fill in all fields.");
+        return;
+      }
+
+      // Save to localStorage (for demo purposes)
+      const user = { name, email, studentClass, password };
+      localStorage.setItem("user", JSON.stringify(user));
+
+      alert("Sign up successful! Redirecting to login page...");
+      window.location.href = "login.html";
+    });
+  </script>
+</body>
+</html>
