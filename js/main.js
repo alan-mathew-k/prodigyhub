@@ -279,6 +279,12 @@ function displaySubscribedCourses() {
               </div>
           </div>
       </a>
+      <div class="text-center pb-3">
+          <button class="btn btn-primary py-2 px-4 mt-2"
+              onclick="sessionStorage.setItem('currentCourse','${sub.courseId}'); window.location.href='leaderboard.html';">
+              <i class="fa fa-trophy mr-2"></i> View Leaderboard
+          </button>
+      </div>
     `;
     container.appendChild(card);
   });

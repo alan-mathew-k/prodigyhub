@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leaderboard | Edukate</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #f8f9fa;
+      font-family: "Poppins", sans-serif;
+    }
+
+    .leaderboard-container {
+      max-width: 700px;
+      margin: 50px auto;
+      background: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    .leaderboard-header {
+      background: #6f42c1;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .leaderboard-header h2 {
+      margin: 0;
+      font-weight: 600;
+    }
+
+    .leaderboard-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .leaderboard-list li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 25px;
+      border-bottom: 1px solid #e9ecef;
+    }
+
+    .leaderboard-list li:last-child {
+      border-bottom: none;
+    }
+
+    .leaderboard-rank {
+      font-weight: 600;
+      color: #6f42c1;
+      width: 40px;
+    }
+
+    .leaderboard-name {
+      flex: 1;
+      font-weight: 500;
+      color: #343a40;
+    }
+
+    .leaderboard-score {
+      font-weight: 600;
+      color: #28a745;
+    }
+
+    .back-btn {
+      display: inline-block;
+      margin: 20px auto;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="leaderboard-container">
+    <div class="leaderboard-header">
+      <h2><i class="fa fa-trophy mr-2"></i> Course Leaderboard</h2>
+      <p class="mb-0">Top performers in this course</p>
+    </div>
+    <ul class="leaderboard-list">
+      <li>
+        <span class="leaderboard-rank">#1</span>
+        <span class="leaderboard-name">Alice Johnson</span>
+        <span class="leaderboard-score">980 pts</span>
+      </li>
+      <li>
+        <span class="leaderboard-rank">#2</span>
+        <span class="leaderboard-name">Rahul Mehta</span>
+        <span class="leaderboard-score">920 pts</span>
+      </li>
+      <li>
+        <span class="leaderboard-rank">#3</span>
+        <span class="leaderboard-name">Sophie Lee</span>
+        <span class="leaderboard-score">875 pts</span>
+      </li>
+      <li>
+        <span class="leaderboard-rank">#4</span>
+        <span class="leaderboard-name">Carlos Diaz</span>
+        <span class="leaderboard-score">860 pts</span>
+      </li>
+      <li>
+        <span class="leaderboard-rank">#5</span>
+        <span class="leaderboard-name">Ananya Gupta</span>
+        <span class="leaderboard-score">830 pts</span>
+      </li>
+    </ul>
+  </div>
+
+  <div class="text-center back-btn">
+    <a href="./course.html" class="btn btn-primary px-4 py-2">
+      <i class="fa fa-arrow-left mr-2"></i> Back to Courses
+    </a>
+  </div>
+
+</body>
+
+</html>
