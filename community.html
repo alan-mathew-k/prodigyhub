@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Community | Edukate</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #f8f9fa;
+      font-family: "Poppins", sans-serif;
+    }
+
+    .community-container {
+      max-width: 800px;
+      margin: 50px auto;
+      background: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    .community-header {
+      background: #6f42c1;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .community-header h2 {
+      margin: 0;
+      font-weight: 600;
+    }
+
+    .question-form {
+      padding: 20px;
+      border-bottom: 1px solid #e9ecef;
+    }
+
+    .question-form textarea {
+      resize: none;
+    }
+
+    .question-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .question-item {
+      padding: 20px;
+      border-bottom: 1px solid #e9ecef;
+    }
+
+    .question-item:last-child {
+      border-bottom: none;
+    }
+
+    .question-user {
+      font-weight: 600;
+      color: #6f42c1;
+    }
+
+    .question-text {
+      margin: 10px 0;
+      color: #343a40;
+    }
+
+    .question-actions {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .vote-btn {
+      color: #28a745;
+      cursor: pointer;
+    }
+
+    .vote-btn:hover {
+      text-decoration: underline;
+    }
+
+    .reply-btn {
+      color: #6f42c1;
+      cursor: pointer;
+    }
+
+    .reply-btn:hover {
+      text-decoration: underline;
+    }
+
+    .back-btn {
+      display: inline-block;
+      margin: 20px auto;
+      text-align: center;
+    }
+
+    .reply-box {
+      margin-top: 10px;
+      padding-left: 40px;
+    }
+
+    .reply-box small {
+      color: #6c757d;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="community-container">
+    <div class="community-header">
+      <h2><i class="fa fa-comments mr-2"></i> Community Forum</h2>
+      <p class="mb-0">Ask your doubts and help others learn</p>
+    </div>
+
+    <!-- Question Form -->
+    <div class="question-form">
+      <h5 class="mb-3">Post a New Doubt</h5>
+      <form id="doubtForm">
+        <div class="form-group">
+          <input type="text" class="form-control mb-2" id="userName" placeholder="Your Name" required>
+          <textarea class="form-control mb-2" id="userQuestion" rows="3" placeholder="Type your question..." required></textarea>
+          <button type="submit" class="btn btn-success btn-block"><i class="fa fa-paper-plane mr-2"></i>Post Question</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Doubts List -->
+    
+  <div class="text-center back-btn">
+    <a href="./course.html" class="btn btn-primary px-4 py-2">
+      <i class="fa fa-arrow-left mr-2"></i> Back to Courses
+    </a>
+  </div>
+
+  <script>
+    const form = document.getElementById('doubtForm');
+    const questionList = document.getElementById('questionList');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      const name = document.getElementById('userName').value.trim();
+      const question = document.getElementById('userQuestion').value.trim();
+
+      if (name && question) {
+        const li = document.createElement('li');
+        li.classList.add('question-item');
+        li.innerHTML = `
+          <span class="question-user">${name}</span>
+          <p class="question-text">${question}</p>
+          <div class="question-actions">
+            <span class="vote-btn"><i class="fa fa-thumbs-up"></i> 0</span>
+            <span class="reply-btn">Reply</span>
+          </div>
+        `;
+        questionList.prepend(li);
+
+        form.reset();
+      }
+    });
+  </script>
+
+</body>
+
+</html>

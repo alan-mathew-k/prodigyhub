@@ -1,28 +1,20 @@
-const courseTypes = ["Tech", "Finance", "Business", "Craft", "PD"];
+const courseTypes = ["Film", "Fashion", "Business", "Craft", "PD",];
 const dummyCourses  = {
-  Tech: [
-    { id: "Tech_1", title: "JavaScript Essentials", instructor: "Jane Doe", count: 1200, rating: 4.5, thumbnail: "img/courses-1.jpg" },
-    { id: "Tech_2", title: "Intro to Python", instructor: "John Smith", count: 2300, rating: 4.7, thumbnail: "img/courses-1.jpg" },
-    { id: "Tech_3", title: "Full Stack Web Dev", instructor: "Sara Lee", count: 1800, rating: 4.6, thumbnail: "img/courses-1.jpg" },
-    { id: "Tech_4", title: "Machine Learning 101", instructor: "Mike Chan", count: 1500, rating: 4.8, thumbnail: "img/courses-1.jpg" },
-    { id: "Tech_5", title: "Cloud Computing Basics", instructor: "Angela Yu", count: 900, rating: 4.3, thumbnail: "img/courses-1.jpg" },
-    { id: "Tech_6", title: "Cybersecurity Intro", instructor: "David Liu", count: 1100, rating: 4.4, thumbnail: "img/courses-1.jpg" },
-    { id: "Tech_7", title: "React for Beginners", instructor: "Emily Zhang", count: 1750, rating: 4.7, thumbnail: "img/courses-1.jpg" },
-    { id: "Tech_8", title: "Data Structures", instructor: "Tom Riddle", count: 2100, rating: 4.6, thumbnail: "img/courses-1.jpg" },
-    { id: "Tech_9", title: "AI for Everyone", instructor: "Elon N.", count: 1950, rating: 4.9, thumbnail: "img/courses-1.jpg" },
-    { id: "Tech_10", title: "Docker Fundamentals", instructor: "Chris P.", count: 850, rating: 4.2, thumbnail: "img/courses-1.jpg" },
+  Film: [
+    { id: "Film_1", title: "Film Editing", instructor: "Jane Doe", count: 1200, rating: 4.5, thumbnail: "img/courses-1.jpg" },
+    { id: "Film_2", title: "Acting", instructor: "John Smith", count: 2300, rating: 4.7, thumbnail: "img/courses-1.jpg" },
+    { id: "Film_3", title: "Script Writing", instructor: "Sara Lee", count: 1800, rating: 4.6, thumbnail: "img/courses-1.jpg" },
+    { id: "Film_4", title: "Cinematography", instructor: "Mike Chan", count: 1500, rating: 4.8, thumbnail: "img/courses-1.jpg" },
+    { id: "Film_5", title: "Direction", instructor: "Angela Yu", count: 900, rating: 4.3, thumbnail: "img/courses-1.jpg" },
+    { id: "Film_6", title: "VFX", instructor: "David Liu", count: 1100, rating: 4.4, thumbnail: "img/courses-1.jpg" }
   ],
-  Finance: [
-    { id: "Finance_1", title: "Investing 101", instructor: "Warren B.", count: 3000, rating: 4.9, thumbnail: "img/courses-1.jpg" },
-    { id: "Finance_2", title: "Crypto Basics", instructor: "Satoshi N.", count: 2200, rating: 4.6, thumbnail: "img/courses-1.jpg" },
-    { id: "Finance_3", title: "Personal Budgeting", instructor: "Dave Ramsey", count: 2700, rating: 4.8, thumbnail: "img/courses-1.jpg" },
-    { id: "Finance_4", title: "Forex Trading", instructor: "Anna L.", count: 1600, rating: 4.3, thumbnail: "img/courses-1.jpg" },
-    { id: "Finance_5", title: "Corporate Finance", instructor: "Michael Burry", count: 1100, rating: 4.4, thumbnail: "img/courses-1.jpg" },
-    { id: "Finance_6", title: "Accounting Basics", instructor: "Paul A.", count: 1800, rating: 4.5, thumbnail: "img/courses-1.jpg" },
-    { id: "Finance_7", title: "Stock Market Analysis", instructor: "Rachel Z.", count: 2100, rating: 4.7, thumbnail: "img/courses-1.jpg" },
-    { id: "Finance_8", title: "Real Estate Investing", instructor: "Robert K.", count: 1500, rating: 4.6, thumbnail: "img/courses-1.jpg" },
-    { id: "Finance_9", title: "Financial Modeling", instructor: "Tina F.", count: 1250, rating: 4.2, thumbnail: "img/courses-1.jpg" },
-    { id: "Finance_10", title: "Risk Management", instructor: "Nina G.", count: 950, rating: 4.1, thumbnail: "img/courses-1.jpg" },
+  Fashion: [
+    { id: "Fashion_1", title: "Textile Design", instructor: "Warren B.", count: 3000, rating: 4.9, thumbnail: "img/courses-1.jpg" },
+    { id: "Fashion_2", title: "Fashion Photography", instructor: "Satoshi N.", count: 2200, rating: 4.6, thumbnail: "img/courses-1.jpg" },
+    { id: "Fashion_3", title: "Accessory Design", instructor: "Dave Ramsey", count: 2700, rating: 4.8, thumbnail: "img/courses-1.jpg" },
+    { id: "Fashion_4", title: "Luxury & Lifestyle Design", instructor: "Anna L.", count: 1600, rating: 4.3, thumbnail: "img/courses-1.jpg" },
+    { id: "Fashion_5", title: "Sustainable Fashion", instructor: "Michael Burry", count: 1100, rating: 4.4, thumbnail: "img/courses-1.jpg" },
+    { id: "Fashion_6", title: "Apparel Production", instructor: "Paul A.", count: 1800, rating: 4.5, thumbnail: "img/courses-1.jpg" },
   ],
   Business: [
     { id: "Business_1", title: "Business Strategy", instructor: "Gary Vee", count: 2100, rating: 4.7, thumbnail: "img/courses-1.jpg" },
@@ -167,8 +159,8 @@ function showCourses() {
 // Initialize
 document.addEventListener("DOMContentLoaded", () => {
   addCourseTypes();
-  categoryBtn.textContent = "Tech";        
-  updateCourseDropdown("Tech");
+  categoryBtn.textContent = "Film";        
+  updateCourseDropdown("Film");
 
   // Show courses button click
   showBtn.addEventListener("click", showCourses);
@@ -283,6 +275,18 @@ function displaySubscribedCourses() {
           <button class="btn btn-primary py-2 px-4 mt-2"
               onclick="sessionStorage.setItem('currentCourse','${sub.courseId}'); window.location.href='leaderboard.html';">
               <i class="fa fa-trophy mr-2"></i> View Leaderboard
+          </button>
+      </div>
+      <div class="text-center pb-3">
+          <button class="btn btn-primary py-2 px-4 mt-2"
+              onclick="sessionStorage.setItem('currentCourse','${sub.courseId}'); window.location.href='community.html';">
+              <i class="fa fa-comments mr-2"></i> Go to Community
+          </button>
+      </div>
+      <div class="text-center pb-3">
+          <button class="btn btn-primary py-2 px-4 mt-2"
+              onclick="sessionStorage.setItem('currentCourse','${sub.courseId}'); window.location.href='bookslot.html';">
+              <i class="fa fa-calendar-check mr-2"></i> Book an appointment
           </button>
       </div>
     `;

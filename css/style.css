@@ -2377,7 +2377,12 @@ fieldset:disabled a.btn {
   background-color: #7607A6;
   border-color: #7607A6;
 }
-
+.btn-primary-new {
+  color: #fff;
+  width: 100%;
+  background-color: #7607A6;
+  border-color: #7607A6;
+}
 .btn-primary:hover {
   color: #fff;
   background-color: #CB62F8;

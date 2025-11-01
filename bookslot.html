@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Book Appointment | ProdigyHub</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="Online Learning, Education, Appointment" name="keywords">
+  <meta content="Book your mentoring or consultation session with ProdigyHub" name="description">
+  <script src="js/main.js"></script>
+
+  <!-- Favicon -->
+  <link href="img/favicon.ico" rel="icon">
+
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Libraries Stylesheet -->
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Topbar Start -->
+  <div class="container-fluid bg-dark">
+    <div class="row py-2 px-lg-5">
+      <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
+        <div class="d-inline-flex align-items-center text-white">
+          <small><i class="fa fa-phone-alt mr-2"></i>+91 9746346712</small>
+          <small class="px-3">|</small>
+          <small><i class="fa fa-envelope mr-2"></i>prodigyhub@gmail.com</small>
+        </div>
+      </div>
+      <div class="col-lg-6 text-center text-lg-right">
+        <div class="d-inline-flex align-items-center">
+          <a class="text-white px-2" href="#"><i class="fab fa-facebook-f"></i></a>
+          <a class="text-white px-2" href="#"><i class="fab fa-twitter"></i></a>
+          <a class="text-white px-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a class="text-white px-2" href="#"><i class="fab fa-instagram"></i></a>
+          <a class="text-white pl-2" href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Topbar End -->
+
+
+  <!-- Navbar Start -->
+  <div class="container-fluid p-0">
+    <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0 px-lg-5">
+      <a href="index.html" class="navbar-brand ml-lg-3">
+        <h1 class="m-0 text-uppercase text-primary"><img src="img/PRODIGY_HUB_TRANS.png" height="60" width="60">
+          PRODIGYHUB</h1>
+      </a>
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-between px-lg-5" id="navbarCollapse">
+        <a href="./course.html" class="btn btn-primary-new pr-3 pl-3 pt-1 pb-1 d-inline offset-10">Go to Courses</a>
+      </div>
+    </nav>
+  </div>
+  <!-- Navbar End -->
+
+  <!-- Book Appointment Start -->
+  <div class="container-fluid py-5">
+    <div class="container py-5">
+      <div class="row mx-0 justify-content-center">
+        <div class="col-lg-8">
+          <div class="section-title text-center position-relative mb-5">
+            <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2">Schedule a Session</h6>
+            <h1 class="display-4"><i class="fa fa-calendar-check text-primary mr-2"></i>Book Appointment</h1>
+            <p class="mt-3">Choose your preferred time and mode to connect with your instructor or mentor.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <form id="appointmentForm" class="bg-white p-5 rounded shadow">
+            <!-- Time Slot -->
+            <div class="form-group">
+              <label class="font-weight-bold">Select Time Slot</label>
+              <select class="form-control" id="timeSlot" required>
+                <option value="">-- Choose a Time Slot --</option>
+                <option>10:00 AM - 11:00 AM</option>
+                <option>11:00 AM - 12:00 PM</option>
+                <option>1:00 PM - 2:00 PM</option>
+                <option>2:00 PM - 3:00 PM</option>
+                <option>4:00 PM - 5:00 PM</option>
+              </select>
+            </div>
+
+            <!-- Mode -->
+            <div class="form-group">
+              <label class="font-weight-bold">Mode of Appointment</label>
+              <select class="form-control" id="modeSelect" required>
+                <option value="">-- Select Mode --</option>
+                <option value="online">Online</option>
+                <option value="offline">Offline</option>
+              </select>
+            </div>
+
+            <!-- Location -->
+            <div class="form-group" id="locationField" style="display: none;">
+              <label class="font-weight-bold">Specify Location (for Offline)</label>
+              <input type="text" class="form-control" id="locationInput" placeholder="Enter map url">
+            </div>
+
+            <!-- Submit -->
+            <div class="text-center mt-4">
+              <button type="submit" class="btn btn-primary py-3 px-5">
+                <i class="fa fa-check mr-2"></i>Confirm Appointment
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Book Appointment End -->
+
+  <!-- Footer Start -->
+  <div class="container-fluid position-relative overlay-top bg-dark text-white-50 py-5" style="margin-top: 90px;">
+    <div class="container mt-5 pt-5">
+      <div class="row">
+        <div class="col-md-6 mb-5">
+          <a href="index.html" class="navbar-brand">
+            <h1 class="mt-n2 text-uppercase text-white">
+              <img src="img/PRODIGY_HUB_TRANS.png" height="60" width="60">ProdigyHub
+            </h1>
+          </a>
+          <p class="m-0">
+            Prodigyhub is a modern learning platform offering world-class online courses, expert instructors,
+            and flexible learning paths for students worldwide.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 mb-5">
+          <h3 class="text-white mb-4">Get In Touch</h3>
+          <p><i class="fa fa-map-marker-alt mr-2"></i>Ambady Nagar, Trivandrum</p>
+          <p><i class="fa fa-phone-alt mr-2"></i>+91 9746346712</p>
+          <p><i class="fa fa-envelope mr-2"></i>prodigyhub@gmail.com</p>
+        </div>
+        <div class="col-md-4 mb-5">
+          <h3 class="text-white mb-4">Quick Links</h3>
+          <div class="d-flex flex-column justify-content-start">
+            <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Privacy Policy</a>
+            <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Terms & Conditions</a>
+            <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>FAQs</a>
+            <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Help & Support</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer End -->
+
+  <!-- Back to Top -->
+  <a href="#" class="btn btn-lg btn-primary rounded-0 btn-lg-square back-to-top"><i
+      class="fa fa-angle-double-up"></i></a>
+
+  <!-- JS Libraries -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+  <!-- Form Script -->
+  <script>
+    const modeSelect = document.getElementById('modeSelect');
+    const locationField = document.getElementById('locationField');
+
+    modeSelect.addEventListener('change', () => {
+      if (modeSelect.value === 'offline') {
+        locationField.style.display = 'block';
+        document.getElementById('locationInput').setAttribute('required', true);
+      } else {
+        locationField.style.display = 'none';
+        document.getElementById('locationInput').removeAttribute('required');
+      }
+    });
+
+    document.getElementById('appointmentForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+      alert('Your appointment has been booked successfully!');
+      e.target.reset();
+      locationField.style.display = 'none';
+    });
+  </script>
+
+</body>
+
+</html>
