@@ -274,19 +274,19 @@ function displaySubscribedCourses() {
       <div class="text-center pb-3">
           <button class="btn btn-primary py-2 px-4 mt-2"
               onclick="sessionStorage.setItem('currentCourse','${sub.courseId}'); window.location.href='leaderboard.html';">
-              <i class="fa fa-trophy mr-2"></i> View Leaderboard
+              <i class="fa fa-trophy mr-2"></i> View  Leaderboard
           </button>
       </div>
       <div class="text-center pb-3">
           <button class="btn btn-primary py-2 px-4 mt-2"
               onclick="sessionStorage.setItem('currentCourse','${sub.courseId}'); window.location.href='community.html';">
-              <i class="fa fa-comments mr-2"></i> Go to Community
+              <i class="fa fa-comments mr-2"></i>  Go  to  Community
           </button>
       </div>
       <div class="text-center pb-3">
           <button class="btn btn-primary py-2 px-4 mt-2"
               onclick="sessionStorage.setItem('currentCourse','${sub.courseId}'); window.location.href='bookslot.html';">
-              <i class="fa fa-calendar-check mr-2"></i> Book an appointment
+              <i class="fa fa-calendar-check mr-2"></i> Book appointment
           </button>
       </div>
     `;
