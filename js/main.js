@@ -294,6 +294,8 @@ function displaySubscribedCourses() {
   });
 }
 
+
+
 // Auto-display subscribed courses on load
 window.addEventListener("DOMContentLoaded", displaySubscribedCourses);
 (function ($) {
