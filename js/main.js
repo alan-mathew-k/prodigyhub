@@ -1,12 +1,10 @@
-const courseTypes = ["Film", "Fashion", "Business", "Craft", "PD",];
+const courseTypes = ["Editing", "Fashion", "Business", "Craft", "PD",];
 const dummyCourses  = {
-  Film: [
-    { id: "Film_1", title: "Film Editing", instructor: "Jane Doe", count: 1200, rating: 4.5, thumbnail: "img/courses-1.jpg" },
-    { id: "Film_2", title: "Acting", instructor: "John Smith", count: 2300, rating: 4.7, thumbnail: "img/courses-1.jpg" },
-    { id: "Film_3", title: "Script Writing", instructor: "Sara Lee", count: 1800, rating: 4.6, thumbnail: "img/courses-1.jpg" },
-    { id: "Film_4", title: "Cinematography", instructor: "Mike Chan", count: 1500, rating: 4.8, thumbnail: "img/courses-1.jpg" },
-    { id: "Film_5", title: "Direction", instructor: "Angela Yu", count: 900, rating: 4.3, thumbnail: "img/courses-1.jpg" },
-    { id: "Film_6", title: "VFX", instructor: "David Liu", count: 1100, rating: 4.4, thumbnail: "img/courses-1.jpg" }
+  Editing: [
+    { id: "Editing_1", title: "Film Editing", instructor: "Jane Doe", count: 1200, rating: 4.5, thumbnail: "img/courses-1.jpg" },
+    { id: "Editing_2", title: "VFX", instructor: "John Smith", count: 2300, rating: 4.7, thumbnail: "img/courses-1.jpg" },
+    { id: "Editing_3", title: "Script Writing", instructor: "Sara Lee", count: 1800, rating: 4.6, thumbnail: "img/courses-1.jpg" },
+    { id: "Editing_4", title: "Cinematography", instructor: "Mike Chan", count: 1500, rating: 4.8, thumbnail: "img/courses-1.jpg" },
   ],
   Fashion: [
     { id: "Fashion_1", title: "Textile Design", instructor: "Warren B.", count: 3000, rating: 4.9, thumbnail: "img/courses-1.jpg" },
@@ -159,8 +157,8 @@ function showCourses() {
 // Initialize
 document.addEventListener("DOMContentLoaded", () => {
   addCourseTypes();
-  categoryBtn.textContent = "Film";        
-  updateCourseDropdown("Film");
+  categoryBtn.textContent = "Editing";        
+  updateCourseDropdown("Editing");
 
   // Show courses button click
   showBtn.addEventListener("click", showCourses);
