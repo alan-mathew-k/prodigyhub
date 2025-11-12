@@ -7,47 +7,35 @@ const dummyCourses  = {
     { id: "Editing_4", title: "Adode Photoshop", instructor: "Mike Chan", count: 1500, rating: 4.8, thumbnail: "img/courses-1.jpg" },
   ],
   Fashion: [
-    { id: "Fashion_1", title: "Textile Design", instructor: "Warren B.", count: 3000, rating: 4.9, thumbnail: "img/courses-1.jpg" },
-    { id: "Fashion_2", title: "Fashion Photography", instructor: "Satoshi N.", count: 2200, rating: 4.6, thumbnail: "img/courses-1.jpg" },
-    { id: "Fashion_3", title: "Accessory Design", instructor: "Dave Ramsey", count: 2700, rating: 4.8, thumbnail: "img/courses-1.jpg" },
-    { id: "Fashion_4", title: "Luxury & Lifestyle Design", instructor: "Anna L.", count: 1600, rating: 4.3, thumbnail: "img/courses-1.jpg" },
-    { id: "Fashion_5", title: "Sustainable Fashion", instructor: "Michael Burry", count: 1100, rating: 4.4, thumbnail: "img/courses-1.jpg" },
-    { id: "Fashion_6", title: "Apparel Production", instructor: "Paul A.", count: 1800, rating: 4.5, thumbnail: "img/courses-1.jpg" },
+    { id: "Fashion_1", title: "Personal Styling", instructor: "Warren B.", count: 3000, rating: 4.9, thumbnail: "img/courses-1.jpg" },
+    { id: "Fashion_2", title: "Fashion Management", instructor: "Satoshi N.", count: 2200, rating: 4.6, thumbnail: "img/courses-1.jpg" },
+    
+    { id: "Fashion_3", title: "Sustainable Fashion", instructor: "Michael Burry", count: 1100, rating: 4.4, thumbnail: "img/courses-1.jpg" },
+    { id: "Fashion_4", title: "Textile Fashion", instructor: "Paul A.", count: 1800, rating: 4.5, thumbnail: "img/courses-1.jpg" },
   ],
   Business: [
     { id: "Business_1", title: "Business Strategy", instructor: "Gary Vee", count: 2100, rating: 4.7, thumbnail: "img/courses-1.jpg" },
-    { id: "Business_2", title: "Startup Launchpad", instructor: "Elon Musk", count: 3200, rating: 4.9, thumbnail: "img/courses-1.jpg" },
-    { id: "Business_3", title: "Leadership Skills", instructor: "Simon Sinek", count: 2800, rating: 4.8, thumbnail: "img/courses-1.jpg" },
-    { id: "Business_4", title: "Entrepreneurship", instructor: "Mark Cuban", count: 1900, rating: 4.6, thumbnail: "img/courses-1.jpg" },
-    { id: "Business_5", title: "Marketing 101", instructor: "Neil Patel", count: 2700, rating: 4.7, thumbnail: "img/courses-1.jpg" },
-    { id: "Business_6", title: "Sales Mastery", instructor: "Grant Cardone", count: 1600, rating: 4.5, thumbnail: "img/courses-1.jpg" },
-    { id: "Business_7", title: "Product Management", instructor: "Marty Cagan", count: 1400, rating: 4.4, thumbnail: "img/courses-1.jpg" },
-    { id: "Business_8", title: "Operations Management", instructor: "Tim Cook", count: 1100, rating: 4.3, thumbnail: "img/courses-1.jpg" },
-    { id: "Business_9", title: "Business Analytics", instructor: "Sheryl S.", count: 1350, rating: 4.5, thumbnail: "img/courses-1.jpg" },
-    { id: "Business_10", title: "Corporate Law", instructor: "Harvey S.", count: 950, rating: 4.2, thumbnail: "img/courses-1.jpg" },
+    
+    { id: "Business_2", title: "Entrepreneurship", instructor: "Mark Cuban", count: 1900, rating: 4.6, thumbnail: "img/courses-1.jpg" },
+    
+    { id: "Business_3", title: "Product Management", instructor: "Marty Cagan", count: 1400, rating: 4.4, thumbnail: "img/courses-1.jpg" },
+    { id: "Business_4", title: "Operations Management", instructor: "Tim Cook", count: 1100, rating: 4.3, thumbnail: "img/courses-1.jpg" },
+    
   ],
   Craft: [
-    { id: "Craft_1", title: "Woodworking Basics", instructor: "Bob the Builder", count: 700, rating: 4.6, thumbnail: "img/courses-1.jpg" },
-    { id: "Craft_2", title: "DIY Home Decor", instructor: "Martha S.", count: 1200, rating: 4.8, thumbnail: "img/courses-1.jpg" },
-    { id: "Craft_3", title: "Sewing for Beginners", instructor: "Anna W.", count: 800, rating: 4.4, thumbnail: "img/courses-1.jpg" },
-    { id: "Craft_4", title: "Pottery 101", instructor: "Clay T.", count: 600, rating: 4.3, thumbnail: "img/courses-1.jpg" },
-    { id: "Craft_5", title: "Candle Making", instructor: "Lily M.", count: 500, rating: 4.2, thumbnail: "img/courses-1.jpg" },
-    { id: "Craft_6", title: "Knitting Essentials", instructor: "Granny J.", count: 850, rating: 4.5, thumbnail: "img/courses-1.jpg" },
-    { id: "Craft_7", title: "Leather Crafting", instructor: "Tom H.", count: 400, rating: 4.1, thumbnail: "img/courses-1.jpg" },
-    { id: "Craft_8", title: "Origami Art", instructor: "Kenji M.", count: 950, rating: 4.7, thumbnail: "img/courses-1.jpg" },
-    { id: "Craft_9", title: "Scrapbooking", instructor: "Emma K.", count: 750, rating: 4.3, thumbnail: "img/courses-1.jpg" },
-    { id: "Craft_10", title: "Painting with Acrylics", instructor: "Leo D.", count: 1000, rating: 4.6, thumbnail: "img/courses-1.jpg" },
+    
+    { id: "Craft_1", title: "Ceramic & Pottery", instructor: "Clay T.", count: 600, rating: 4.3, thumbnail: "img/courses-1.jpg" },
+    { id: "Craft_2", title: "Candle Making", instructor: "Lily M.", count: 500, rating: 4.2, thumbnail: "img/courses-1.jpg" },
+    { id: "Craft_3", title: "Jewellery Making", instructor: "Granny J.", count: 850, rating: 4.5, thumbnail: "img/courses-1.jpg" },
+   
+    { id: "Craft_4", title: "Textile Craft", instructor: "Kenji M.", count: 950, rating: 4.7, thumbnail: "img/courses-1.jpg" },
   ],
   PD: [
     { id: "PD_1", title: "Time Management", instructor: "Brian T.", count: 1800, rating: 4.5, thumbnail: "img/courses-1.jpg" },
     { id: "PD_2", title: "Public Speaking", instructor: "Chris A.", count: 2200, rating: 4.8, thumbnail: "img/courses-1.jpg" },
     { id: "PD_3", title: "Emotional Intelligence", instructor: "Daniel G.", count: 1700, rating: 4.6, thumbnail: "img/courses-1.jpg" },
-    { id: "PD_4", title: "Mindfulness Meditation", instructor: "Thich N.", count: 1400, rating: 4.7, thumbnail: "img/courses-1.jpg" },
-    { id: "PD_5", title: "Goal Setting", instructor: "Tony R.", count: 1300, rating: 4.4, thumbnail: "img/courses-1.jpg" },
-    { id: "PD_6", title: "Critical Thinking", instructor: "Carl S.", count: 1200, rating: 4.5, thumbnail: "img/courses-1.jpg" },
-    { id: "PD_7", title: "Negotiation Skills", instructor: "Chris V.", count: 900, rating: 4.3, thumbnail: "img/courses-1.jpg" },
-    { id: "PD_8", title: "Personal Finance", instructor: "Jean C.", count: 1600, rating: 4.6, thumbnail: "img/courses-1.jpg" },
-    { id: "PD_9", title: "Self Discipline", instructor: "David G.", count: 1150, rating: 4.4, thumbnail: "img/courses-1.jpg" },
+  
+    { id: "PD_4", title: "Critical Thinking", instructor: "Carl S.", count: 1200, rating: 4.5, thumbnail: "img/courses-1.jpg" },
   ]
 };
 
