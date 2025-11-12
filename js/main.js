@@ -3,7 +3,7 @@ const dummyCourses  = {
   Editing: [
     { id: "Editing_1", title: "Character Animation", instructor: "Jane Doe", count: 1200, rating: 4.5, thumbnail: "img/courses-1.jpg" },
     { id: "Editing_2", title: "3D Animation", instructor: "John Smith", count: 2300, rating: 4.7, thumbnail: "img/courses-1.jpg" },
-    { id: "Editing_3", title: "Visual Effexts", instructor: "Sara Lee", count: 1800, rating: 4.6, thumbnail: "img/courses-1.jpg" },
+    { id: "Editing_3", title: "Visual Effects", instructor: "Sara Lee", count: 1800, rating: 4.6, thumbnail: "img/courses-1.jpg" },
     { id: "Editing_4", title: "Adode Photoshop", instructor: "Mike Chan", count: 1500, rating: 4.8, thumbnail: "img/courses-1.jpg" },
   ],
   Fashion: [
