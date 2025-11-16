@@ -105,7 +105,7 @@
               </select>
             </div>
 
-            <!-- Mode -->
+            <!-- Mode 
             <div class="form-group">
               <label class="font-weight-bold">Mode of Appointment</label>
               <select class="form-control" id="modeSelect" required>
@@ -115,12 +115,12 @@
               </select>
             </div>
 
-            <!-- Location -->
+             Location 
             <div class="form-group" id="locationField" style="display: none;">
               <label class="font-weight-bold">Specify Location (for Offline)</label>
               <input type="text" class="form-control" id="locationInput" placeholder="Enter map URL">
             </div>
-
+-->
             <!-- Submit -->
             <div class="text-center mt-4">
               <button type="submit" class="btn btn-primary py-3 px-5">
@@ -193,7 +193,7 @@
 
   <!-- Form Script -->
   <script>
-    const modeSelect = document.getElementById('modeSelect');
+   // const modeSelect = document.getElementById('modeSelect');
     const locationField = document.getElementById('locationField');
     const dateInput = document.getElementById('appointmentDate');
 
@@ -201,15 +201,15 @@
     const today = new Date().toISOString().split('T')[0];
     dateInput.setAttribute('min', today);
 
-    modeSelect.addEventListener('change', () => {
-      if (modeSelect.value === 'offline') {
-        locationField.style.display = 'block';
-        document.getElementById('locationInput').setAttribute('required', true);
-      } else {
-        locationField.style.display = 'none';
-        document.getElementById('locationInput').removeAttribute('required');
-      }
-    });
+  //  modeSelect.addEventListener('change', () => {
+     // if (modeSelect.value === 'offline') {
+      //  locationField.style.display = 'block';
+        //document.getElementById('locationInput').setAttribute('required', true);
+    //  } else {
+       // locationField.style.display = 'none';
+        //document.getElementById('locationInput').removeAttribute('required');
+      //}
+   // });
 
     document.getElementById('appointmentForm').addEventListener('submit', (e) => {
       e.preventDefault();
